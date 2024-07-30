@@ -1,3 +1,4 @@
+//Пуффендуй
 public class Hufflepuff extends Hogwarts {
     //hard work, loyalty, honor
     private int hardWork; // трудолюбие
@@ -33,5 +34,12 @@ public class Hufflepuff extends Hogwarts {
 
     public void setHonor(int honor) {
         this.honor = honor;
+    }
+
+    public void printStudent(){
+        super.printStudent();
+        System.out.print("Трудолюбие: " + hardWork + ". ");
+        System.out.print("Верность: " + loyalty + ". ");
+        System.out.print("Честь: " + honor + ". \n");
     }
 }

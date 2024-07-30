@@ -1,3 +1,4 @@
+//Слизерин
 public class Slytherin extends Hogwarts {
   //хитрость, решительность, амбициозность, находчивость, власть
   private int cunning;
@@ -53,5 +54,13 @@ public class Slytherin extends Hogwarts {
 
   public void setPower(int power) {
     this.power = power;
+  }
+  public void printStudent(){
+    super.printStudent();
+    System.out.print("Хитрость: " + cunning + ". ");
+    System.out.print("Решительность: " + determination + ". ");
+    System.out.print("Амбициозность: " + ambition + ". ");
+    System.out.print("Находчивость: " + resourcefulness + ". ");
+    System.out.print("Власть: " + power + ". \n");
   }
 }

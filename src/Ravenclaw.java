@@ -1,3 +1,4 @@
+//Когтевран
 public class Ravenclaw extends Hogwarts {
     //ум, мудрость, остроумие творчество.
     //intelligence, wisdom, wit, creativity.
@@ -44,5 +45,12 @@ public class Ravenclaw extends Hogwarts {
 
     public void setCreativity(int creativity) {
         this.creativity = creativity;
+    }
+    public void printStudent(){
+        super.printStudent();
+        System.out.print("Ум: " + intelligence + ". ");
+        System.out.print("Мудрость: " + wisdom + ". ");
+        System.out.print("Остроумие: " + wit + ". ");
+        System.out.print("Творчество: " + creativity + ". \n");
     }
 }

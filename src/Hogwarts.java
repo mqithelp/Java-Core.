@@ -3,7 +3,7 @@ public class Hogwarts {
     private String surname;
     private int powerMagic;
     private int transgression;
-    private String[] facilitys = {"Слизерин", "Пуффендуй", "Когтевран", "Гриффиндор"};
+    private final String[] faculties = {"Слизерин", "Пуффендуй", "Когтевран", "Гриффиндор"};
 
     public Hogwarts(String name, String surname, int powerMagic, int transgression) {
         this.name = name;
@@ -60,7 +60,7 @@ public class Hogwarts {
                 i = 3;
                 break;
         }
-        System.out.print("Студент факультета \"" + facilitys[i] + "\"\t " + this.getName() + " "
+        System.out.print("Студент факультета \"" + faculties[i] + "\"\t " + this.getName() + " "
                 + this.getSurname() + ". \tСила магии: " + this.getPowerMagic()
                 + ". Дальность телепортации: " + this.getTransgression() + ". ");
     }

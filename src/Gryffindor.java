@@ -1,3 +1,4 @@
+//Гриффендор
 public class Gryffindor extends Hogwarts {
     private int nobility; //благородство
     private int honor; // честь
