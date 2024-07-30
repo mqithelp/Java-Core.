@@ -9,11 +9,17 @@ public class Main {
 
     public static void main(String[] args) {
         init();
-        Hogwarts.findLeaderSchool(gryffindors.get(2), slytherins.get(0));
-        Gryffindor.findLeader(gryffindors.get(2), gryffindors.get(1));
-        Hufflepuff.findLeader(hufflepuffs.get(2), hufflepuffs.get(0));
-        Ravenclaw.findLeader(ravenclaws.get(0), ravenclaws.get(2));
-        Slytherin.findLeader(slytherins.get(1),slytherins.get(2));
+        try {
+            Hogwarts.findLeaderSchool(gryffindors.get(2), slytherins.get(0));
+            Gryffindor.findLeader(gryffindors.get(2), gryffindors.get(1));
+            Hufflepuff.findLeader(hufflepuffs.get(2), hufflepuffs.get(0));
+            Ravenclaw.findLeader(ravenclaws.get(0), ravenclaws.get(2));
+            Slytherin.findLeader(slytherins.get(1),slytherins.get(2));
+        } catch (Exception e) {
+            System.out.println("Упссс....");
+            throw new IndexOutOfBoundsException();
+        }
+
         for(Gryffindor student : gryffindors) {
             student.printStudent();
         }
