@@ -16,32 +16,16 @@ public class Hogwarts {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getSurname() {
         return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 
     public int getPowerMagic() {
         return powerMagic;
     }
 
-    public void setPowerMagic(int powerMagic) {
-        this.powerMagic = powerMagic;
-    }
-
     public int getTransgression() {
         return transgression;
-    }
-
-    public void setTransgression(int transgression) {
-        this.transgression = transgression;
     }
 
     public void printStudent() {
@@ -63,5 +47,20 @@ public class Hogwarts {
         System.out.print("Студент факультета \"" + faculties[i] + "\"\t " + this.getName() + " "
                 + this.getSurname() + ". \tСила магии: " + this.getPowerMagic()
                 + ". Дальность телепортации: " + this.getTransgression() + ". ");
+    }
+
+    public int getTotalPowerStudent() {
+        return powerMagic + transgression;
+    }
+
+    public static void findLeaderSchool(Hogwarts studentOne, Hogwarts studentTwo) {
+
+        if (studentOne.getTotalPowerStudent() > studentTwo.getPowerMagic()) {
+            System.out.println(studentOne.getName() + " " + studentOne.getSurname() +
+                    " обладает бОльшей мощностью магии, чем " + studentTwo.getName() + " " + studentTwo.getSurname());
+        } else {
+            System.out.println(studentTwo.getName() + " " + studentTwo.getSurname() +
+                    " обладает бОльшей мощностью магии, чем " + studentOne.getName() + " " + studentOne.getSurname());
+        }
     }
 }

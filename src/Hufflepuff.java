@@ -1,6 +1,5 @@
 //Пуффендуй
 public class Hufflepuff extends Hogwarts {
-    //hard work, loyalty, honor
     private int hardWork; // трудолюбие
     private int loyalty; // верность
     private int honor; // честь
@@ -12,34 +11,22 @@ public class Hufflepuff extends Hogwarts {
         this.honor = honor;
     }
 
-    public int getHardWork() {
-        return hardWork;
-    }
-
-    public void setHardWork(int hardWork) {
-        this.hardWork = hardWork;
-    }
-
-    public int getLoyalty() {
-        return loyalty;
-    }
-
-    public void setLoyalty(int loyalty) {
-        this.loyalty = loyalty;
-    }
-
-    public int getHonor() {
-        return honor;
-    }
-
-    public void setHonor(int honor) {
-        this.honor = honor;
-    }
-
-    public void printStudent(){
+       public void printStudent(){
         super.printStudent();
         System.out.print("Трудолюбие: " + hardWork + ". ");
         System.out.print("Верность: " + loyalty + ". ");
         System.out.print("Честь: " + honor + ". \n");
+    }
+    public int totalPower() {
+        return hardWork + honor + loyalty;
+    }
+
+    public static void findLeader(Hufflepuff studentOne, Hufflepuff studentTwo) {
+        if (studentOne.totalPower() > studentTwo.totalPower()) {
+            System.out.println(studentOne.getName() + " лучший Пуффендуец, чем " + studentTwo.getName());
+        } else {
+            System.out.println(studentTwo.getName() + " лучший Пуффендуец, чем " + studentOne.getName());
+        }
+
     }
 }
