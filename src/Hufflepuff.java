@@ -11,4 +11,27 @@ public class Hufflepuff extends Hogwarts {
         this.honor = honor;
     }
 
+    public int getHardWork() {
+        return hardWork;
+    }
+
+    public void setHardWork(int hardWork) {
+        this.hardWork = hardWork;
+    }
+
+    public int getLoyalty() {
+        return loyalty;
+    }
+
+    public void setLoyalty(int loyalty) {
+        this.loyalty = loyalty;
+    }
+
+    public int getHonor() {
+        return honor;
+    }
+
+    public void setHonor(int honor) {
+        this.honor = honor;
+    }
 }

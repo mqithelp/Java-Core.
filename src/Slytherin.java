@@ -15,4 +15,43 @@ public class Slytherin extends Hogwarts {
     this.power = power;
   }
 
+  public int getCunning() {
+    return cunning;
+  }
+
+  public int getDetermination() {
+    return determination;
+  }
+
+  public int getAmbition() {
+    return ambition;
+  }
+
+  public int getResourcefulness() {
+    return resourcefulness;
+  }
+
+  public int getPower() {
+    return power;
+  }
+
+  public void setCunning(int cunning) {
+    this.cunning = cunning;
+  }
+
+  public void setDetermination(int determination) {
+    this.determination = determination;
+  }
+
+  public void setAmbition(int ambition) {
+    this.ambition = ambition;
+  }
+
+  public void setResourcefulness(int resourcefulness) {
+    this.resourcefulness = resourcefulness;
+  }
+
+  public void setPower(int power) {
+    this.power = power;
+  }
 }
