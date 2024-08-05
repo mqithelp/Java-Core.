@@ -1,5 +1,9 @@
 public class ServiceStation {
     public void check(Replace transport) {
-        transport.updateTyre();
+        System.out.println("Обслуживаем " + transport.getTransportName());
+        for (int i = 0; i < transport.getTransportWheelsCount(); i++) {
+            transport.updateTyre();
+        }
+
     }
 }

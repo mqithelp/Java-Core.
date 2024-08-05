@@ -11,4 +11,13 @@ public class Car extends Transport implements Replace {
     public void checkEngine() {
         System.out.println("Проверяем двигатель");
     }
+
+    @Override
+    public int getTransportWheelsCount() {
+        return super.getWheelsCount();
+    }
+    @Override
+    public String getTransportName(){
+        return super.getModelName();
+    }
 }
