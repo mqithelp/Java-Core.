@@ -1,4 +1,4 @@
-public class Car extends Transport implements Replace {
+public class Car extends Transport implements Replace, CheckEngine {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -12,12 +12,4 @@ public class Car extends Transport implements Replace {
         System.out.println("Проверяем двигатель");
     }
 
-    @Override
-    public int getTransportWheelsCount() {
-        return super.getWheelsCount();
-    }
-    @Override
-    public String getTransportName(){
-        return super.getModelName();
-    }
 }
