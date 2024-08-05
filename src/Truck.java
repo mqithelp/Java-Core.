@@ -1,4 +1,8 @@
-public class Truck extends Transport {
+public class Truck extends Transport implements Replace {
+
+    public Truck(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
 
     public void updateTyre() {
         System.out.println("Меняем покрышку");
