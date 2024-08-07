@@ -1,4 +1,4 @@
-public class Car extends Transport implements Replace, CheckEngine {
+public class Car extends Transport implements CheckEngine {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);

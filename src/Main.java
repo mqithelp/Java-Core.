@@ -12,6 +12,7 @@ public class Main {
         transports.add(new Bicycle("bicycle2",2));
 
         ServiceStation station = new ServiceStation();
+
         for (Transport transport : transports) {
             station.check(transport);
         }

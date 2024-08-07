@@ -1,6 +1,7 @@
 public abstract class Transport {
     private String modelName;
     private int wheelsCount;
+    abstract void updateTyre();
 
     public Transport(String modelName, int wheelsCount) {
         this.modelName = modelName;
