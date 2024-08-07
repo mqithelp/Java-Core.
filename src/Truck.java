@@ -5,15 +5,15 @@ public class Truck extends Transport implements CheckEngine, CheckTrailer {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку на грузовике.");
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем дизельный двигатель грузовика.");
     }
 
     public void checkTrailer() {
-        System.out.println("Проверяем прицеп");
+        System.out.println("Проверяем прицеп грузовика.");
     }
 
 }

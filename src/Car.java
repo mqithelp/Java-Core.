@@ -5,11 +5,11 @@ public class Car extends Transport implements CheckEngine {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        System.out.println("Меняем покрышку на автомобиле.");
     }
 
     public void checkEngine() {
-        System.out.println("Проверяем двигатель");
+        System.out.println("Проверяем бензиновый двигатель автомобиля.");
     }
 
 }
