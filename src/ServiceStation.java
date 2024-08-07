@@ -5,13 +5,9 @@ public class ServiceStation {
         System.out.println("Обслуживаем " + transport.getModelName() + ". Надо заменить "
                 + transport.getWheelsCount() + " покрышки.");
 
-            for (int i = 0; i < transport.getWheelsCount(); i++) transport.updateTyre();
+        for (int i = 0; i < transport.getWheelsCount(); i++) transport.updateTyre();
 
-        if (transport instanceof CheckEngine) {
-            ((CheckEngine) transport).checkEngine();
-        }
-        if (transport instanceof CheckTrailer) {
-            ((CheckTrailer) transport).checkTrailer();
-        }
+        transport.service();
+
     }
 }
