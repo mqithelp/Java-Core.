@@ -1,4 +1,4 @@
-public class Car extends Transport implements CheckEngine {
+public class Car extends Transport implements CheckEngine, ToDoWell {
 
     public Car(String modelName, int wheelsCount) {
         super(modelName, wheelsCount);
@@ -8,13 +8,13 @@ public class Car extends Transport implements CheckEngine {
         System.out.println("Меняем покрышку на автомобиле.");
     }
 
-    @Override
-    void service() {
-        checkEngine();
-    }
-
     public void checkEngine() {
         System.out.println("Проверяем бензиновый двигатель автомобиля.");
     }
+    public void toDoWell() {
+        changeWheels();
+        checkEngine();
+        System.out.println("Сделано всё супер хорошо! Класс Автомобиль");
 
+    }
 }

@@ -8,11 +8,6 @@ public class Truck extends Transport implements CheckEngine, CheckTrailer {
         System.out.println("Меняем покрышку на грузовике.");
     }
 
-    @Override
-    void service() {
-        checkEngine();
-        checkTrailer();
-    }
 
     public void checkEngine() {
         System.out.println("Проверяем дизельный двигатель грузовика.");
@@ -21,5 +16,10 @@ public class Truck extends Transport implements CheckEngine, CheckTrailer {
     public void checkTrailer() {
         System.out.println("Проверяем прицеп грузовика.");
     }
-
+    public void toDoWell() {
+        changeWheels();
+        checkEngine();
+        checkTrailer();
+        System.out.println("Сделано всё супер хорошо! Класс Грузовик");
+    }
 }
